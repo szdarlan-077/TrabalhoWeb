@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://kit.fontawesome.com/b70a7c1666.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'ARGENT VISTA A OUSADIA.</title>
+    <link rel="stylesheet" href="assets/styleabout.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="CAPA.html">L ' A r g e n t</a></h1>
+        <img src="assets/img/logoL-removebg-preview.png" class="logo-header">
+        <nav>
+            <a href="aboutuspag4.html">SOBRE NOS</a>
+            <a href="#">TUDO</a>
+            <a href="CAPA.html">HOME</a>
+        </nav>
+        <button class="menu-btn" onclick="abrirMenu()">&#9776;</button>
+    </header>
+
+    <div class="menu-mobile" id="menuMobile">
+        <a href="aboutuspag4.html" onclick="fecharMenu()">SOBRE NOS</a>
+        <a href="#" onclick="fecharMenu()">TUDO</a>
+        <a href="CAPA.html" onclick="fecharMenu()">HOME</a>
+    </div>
+
+    <main class="main-section">
+        <h1 class="main-title">EMERGED FROM NOTHING TO BECOME EVERYTHING*</h1>
+        <p class="descricao">surgimos para revolucionar. ifpr - campus uniao da vitoria, entre tantas coisas surge largent</p>
+    </main>
+
+    <section class="about-section">
+        <p class="about-intro">A Largent nasce não apenas como uma marca, mas como um movimento de contracultura no
+            mercado de luxo. Fundada pela visão complementar de Eduarda Geisler, Darlan Szibor e Paulo Silveira, a
+            etiqueta surge para questionar a essência do "ter" em um mundo saturado pelo "exibir". Enquanto o mercado
+            tradicional muitas vezes celebra a ganância e o egoísmo, a Largent trilha o caminho inverso. Utilizamos as
+            referências ao dinheiro em nossas composições não como um símbolo de status vazio, mas como uma ferramenta
+            de provocação e reflexão sobre o consumo desenfreado.</p>
+
+        <div class="pilares">
+            <div class="pilar">
+                <h3>Luxo</h3>
+                <p>A busca pela excelência, pela matéria-prima impecável e pelo detalhe que resiste ao tempo.</p>
+            </div>
+            <div class="pilar">
+                <h3>Rua</h3>
+                <p>A energia urbana, a autenticidade do cotidiano e a voz de quem vive a cidade de forma real.</p>
+            </div>
+            <div class="pilar">
+                <h3>Socialidade</h3>
+                <p>O compromisso com o coletivo, transformando a moda em um elo de conexão humana, longe do isolamento
+                    que a ostentação costuma criar.</p>
+            </div>
+            <div class="pilar">
+                <h3>Aura</h3>
+                <p>Imponência com extravagância e alternatividade. A presença que marca, a personalidade que inspira, o
+                    estilo que desafia convenções.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <h2 class="cta-titulo">🐍 🐊 🦅</h2>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://instagram.com/uselargent" target="_blank">
+                <i class="fa-brands fa-instagram"></i> @uselargent
+            </a>
+            <a href="https://wa.me/5542991141446" target="_blank">
+                <i class="fa-solid fa-message"></i> WhatsApp (42) 99114-1446
+            </a>
+        </div>
+        <div class="footer-links">
+            <span>PAULO</span>
+            <span>DUDA</span>
+            <span>DARLAN</span>
+        </div>
+        <div class="copyright">© 2026 L'ARGENT. Todos os direitos reservados. | Contracultura em Luxo</div>
+    </footer>
+
+    <script>
+        function abrirMenu() {
+            var menu = document.getElementById('menuMobile');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+
+        function fecharMenu() {
+            document.getElementById('menuMobile').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

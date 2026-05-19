@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://kit.fontawesome.com/b70a7c1666.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'ARGENT VISTA A OUSADIA.</title>
+    <link rel="stylesheet" href="assets/stylecapa.css">
+</head>
+
+<body>
+
+    
+    <header>
+        <h1><a href="CAPA.html">L ' A r g e n t</a></h1>
+        <img src="assets/img/logoL-removebg-preview.png" class="logo-header">
+        <nav>
+            <a href="aboutuspag4.html">ABOUT US</a>
+            <a href="#">ALL</a>
+            <a href="CAPA.html">HOME</a>
+        </nav>
+        
+        <button class="menu-btn" onclick="abrirMenu()">&#9776;</button>
+    </header>
+
+   
+    <div class="menu-mobile" id="menuMobile">
+        <a href="aboutuspag4.html" onclick="fecharMenu()">ABOUT US</a>
+        <a href="#" onclick="fecharMenu()">ALL</a>
+        <a href="CAPA.html" onclick="fecharMenu()">HOME</a>
+    </div>
+
+    <main>
+        <div class="video-wrap">
+            <video autoplay loop muted playsinline>
+                <source src="assets/video/PR$ D$Z G$LR  (720 x 90 px).mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="section2">
+            <div class="item-prod">
+                <img src="assets/img/oculos.png" alt="oculos PR$">
+                <h1><a href="pagina1.html">PR$</a></h1>
+            </div>
+            <div class="item-prod">
+                <img src="assets/img/bone.png" alt="bone G$LR">
+                <h1><a href="pagina2.html">G$LR</a></h1>
+            </div>
+            <div class="item-prod">
+                <img src="assets/img/camiseta.png" alt="camiseta DSZ">
+                <h1><a href="pagina3.html">D$Z</a></h1>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://instagram.com/uselargent" target="_blank">
+                <i class="fa-brands fa-instagram"></i> @uselargent
+            </a>
+            <a href="https://wa.me/5542991141446" target="_blank">
+                <i class="fa-solid fa-message"></i> WhatsApp (42) 99114-1446
+            </a>
+        </div>
+        <div class="footer-links">
+            <span>PAULO</span>
+            <span>DUDA</span>
+            <span>DARLAN</span>
+        </div>
+        <div class="copyright">© 2026 L'ARGENT. Todos os direitos reservados. | Contracultura em Luxo</div>
+    </footer>
+
+    <script>
+        function abrirMenu() {
+            var menu = document.getElementById('menuMobile');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+
+        function fecharMenu() {
+            document.getElementById('menuMobile').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

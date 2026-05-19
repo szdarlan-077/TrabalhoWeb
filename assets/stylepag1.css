@@ -1,0 +1,260 @@
+@import url('base.css');
+
+.produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100vh - 80px);
+}
+
+.img-prod {
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 60px 52px;
+}
+
+.tag-prod {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: white;
+    border: 1px solid #333;
+    padding: 6px 14px;
+    z-index: 3;
+}
+
+.txt-vert {
+    position: absolute;
+    bottom: 48px;
+    right: 24px;
+    writing-mode: vertical-rl;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: white;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+.img-princ {
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 6/7;
+    overflow: hidden;
+    border: 1px solid #222;
+    border-radius: 10%;
+}
+
+.img-princ img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10%;
+    transition: transform .5s ease;
+}
+
+.img-princ:hover img {
+    transform: scale(1.05);
+}
+
+.imgs {
+    display: flex;
+    gap: 12px;
+    z-index: 2;
+}
+
+.img-mini {
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    cursor: pointer;
+    opacity: .6;
+    border-radius: 10%;
+    transition: opacity .3s, border-color .3s;
+}
+
+.img-mini img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10%;
+}
+
+.img-mini:hover {
+    opacity: 1;
+    border-color: white;
+}
+
+.img-ativa {
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    border: 1px solid white;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 10%;
+}
+
+.img-ativa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10%;
+}
+
+.info-prod {
+    padding: 80px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #1e1e1e;
+}
+
+.categ-prod {
+    font-size: 9px;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.nome-prod {
+    font-size: 58px;
+    font-weight: 300;
+    line-height: 1.05;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.nome-prod em {
+    font-style: italic;
+    color: white;
+}
+
+.subtit-prod {
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+    margin-bottom: 36px;
+    letter-spacing: 1px;
+}
+
+.div-linha {
+    width: 48px;
+    height: 1px;
+    background: white;
+    margin-bottom: 36px;
+}
+
+.desc-prod {
+    font-size: 13px;
+    line-height: 1.9;
+    color: white;
+    max-width: 440px;
+    margin-bottom: 40px;
+}
+
+.caracts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
+    margin-bottom: 48px;
+}
+
+.cract-txt {
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: #7c7c7c;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.cract-val {
+    font-size: 13px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .produto {
+        grid-template-columns: 1fr;
+        min-height: unset;
+    }
+
+    .img-prod {
+        padding: 50px 24px 32px 24px;
+        min-height: 60vw;
+    }
+
+    .img-princ {
+        max-width: 85vw;
+        aspect-ratio: 4/5;
+    }
+
+    .tag-prod {
+        font-size: 9px;
+        top: 16px;
+        left: 16px;
+        padding: 4px 10px;
+    }
+
+    .txt-vert {
+        display: none;
+    }
+
+    .info-prod {
+        padding: 36px 24px 40px 24px;
+        border-left: none;
+        border-top: 1px solid #1e1e1e;
+    }
+
+    .nome-prod {
+        font-size: 38px;
+    }
+
+    .subtit-prod {
+        font-size: 15px;
+    }
+
+    .desc-prod {
+        font-size: 13px;
+        max-width: 100%;
+    }
+
+    .img-mini,
+    .img-ativa {
+        width: 56px;
+        height: 56px;
+    }
+
+    .caracts {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 16px;
+    }
+}
+
+@media (max-width: 390px) {
+    .nome-prod {
+        font-size: 30px;
+    }
+
+    .img-mini,
+    .img-ativa {
+        width: 48px;
+        height: 48px;
+    }
+
+    .info-prod {
+        padding: 28px 18px 32px 18px;
+    }
+}

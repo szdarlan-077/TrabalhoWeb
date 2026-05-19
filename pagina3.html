@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://kit.fontawesome.com/b70a7c1666.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiseta DSZ Serpent</title>
+    <link rel="stylesheet" href="assets/stylepag3.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="CAPA.html">L ' A r g e n t</a></h1>
+        <img src="assets/img/logoL-removebg-preview.png" class="logo-header">
+        <nav>
+            <a href="aboutuspag4.html">ABOUT US</a>
+            <a href="#">ALL</a>
+            <a href="CAPA.html">HOME</a>
+        </nav>
+        <button class="menu-btn" onclick="abrirMenu()">&#9776;</button>
+    </header>
+
+    <div class="menu-mobile" id="menuMobile">
+        <a href="aboutuspag4.html" onclick="fecharMenu()">ABOUT US</a>
+        <a href="#" onclick="fecharMenu()">ALL</a>
+        <a href="CAPA.html" onclick="fecharMenu()">HOME</a>
+    </div>
+
+    <main>
+        <section class="produto">
+
+            <div class="img-prod">
+                <span class="tag-prod">Nova Coleção · 2026</span>
+
+                <div class="img-princ">
+                    <img id="imgprincipal" src="assets/img/IMG_2204.jpeg" alt="Camisa DSZ L'Argent">
+                </div>
+
+                <div class="imgs">
+                    <div class="img-ativa" onclick="trocarImg(this, 'assets/img/IMG_2204.jpeg', 'Frente e Verso')">
+                        <img src="assets/img/IMG_2204.jpeg" alt="Frente e Verso">
+                    </div>
+                    <div class="img-mini" onclick="trocarImg(this, 'assets/img/IMG_2205.jpeg', 'Frente')">
+                        <img src="assets/img/IMG_2205.jpeg" alt="Frente">
+                    </div>
+                    <div class="img-mini" onclick="trocarImg(this, 'assets/img/IMG_2206.jpeg', 'Detalhe Cobra')">
+                        <img src="assets/img/IMG_2206.jpeg" alt="Verso">
+                    </div>
+                </div>
+
+                <span class="txt-vert">L ' A r g e n t · 2026</span>
+            </div>
+
+            <div class="info-prod">
+                <p class="categ-prod">Streetwear · Edição Limitada</p>
+                <h2 class="nome-prod">Camiseta<br><em>DSZ Serpent</em></h2>
+                <p class="subtit-prod">Oversized Drop · L'Argent x DSZ</p>
+                <div class="div-linha"></div>
+                <p class="desc-prod">
+                    A camiseta DSZ Serpent é o simbolo da nova era da L'Argent. Corte oversized
+                    com caimento premium, estampa silk-screen no verso e logo
+                    DSZ bordado na frente. Uma peça que une o streetwear ao
+                    refinamento da alta moda.
+                </p>
+
+                <div class="caracts">
+                    <div class="cract-item">
+                        <div class="cract-txt">Material</div>
+                        <div class="cract-val">100% Algodão</div>
+                    </div>
+                    <div class="cract-item">
+                        <div class="cract-txt">Gramatura</div>
+                        <div class="cract-val">320 g/m²</div>
+                    </div>
+                    <div class="cract-item">
+                        <div class="cract-txt">Cor</div>
+                        <div class="cract-val">Preto Profundo</div>
+                    </div>
+                    <div class="cract-item">
+                        <div class="cract-txt">Estampa</div>
+                        <div class="cract-val">Silk-screen Premium</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://instagram.com/uselargent" target="_blank">
+                <i class="fa-brands fa-instagram"></i> @uselargent
+            </a>
+            <a href="https://wa.me/5542991141446" target="_blank">
+                <i class="fa-solid fa-message"></i> WhatsApp (42) 99114-1446
+            </a>
+        </div>
+        <div class="footer-links">
+            <span>PAULO</span>
+            <span>DUDA</span>
+            <span>DARLAN</span>
+        </div>
+        <div class="copyright">© 2026 L'ARGENT. Todos os direitos reservados. | Contracultura em Luxo</div>
+    </footer>
+
+    <script>
+        function trocarImg(miniatura, src, alt) {
+            document.getElementById('imgprincipal').src = src;
+            document.getElementById('imgprincipal').alt = alt;
+
+            document.querySelectorAll('.img-mini, .img-ativa').forEach(function (t) {
+                t.classList.remove('img-ativa');
+                t.classList.add('img-mini');
+            });
+
+            miniatura.classList.remove('img-mini');
+            miniatura.classList.add('img-ativa');
+        }
+
+        function abrirMenu() {
+            var menu = document.getElementById('menuMobile');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+
+        function fecharMenu() {
+            document.getElementById('menuMobile').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
