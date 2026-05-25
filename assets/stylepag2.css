@@ -164,7 +164,6 @@
     margin-bottom: 40px;
 }
 
-/* grid de caracteristicas */
 .caracts {
     display: grid;
     grid-template-columns: 1fr 1fr;
